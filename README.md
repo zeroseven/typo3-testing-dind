@@ -7,7 +7,7 @@ Run tests for TYPO3 like the core team does
 ```
 unit tests:
     stage: test
-    image: docker:git
+    image: zeroseven07/typo3-testing-dind:latest
     variables:
         DOCKER_DRIVER: overlay2
         DOCKER_TLS_CERTDIR: "/certs"
